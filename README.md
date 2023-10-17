@@ -12,3 +12,6 @@ Rueles:
 4. Game over:
     if palyer A or b don't have any cards to play he loose the game.
 '''
+
+
+
