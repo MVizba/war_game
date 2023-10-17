@@ -13,5 +13,6 @@ Rueles:
     if palyer A or b don't have any cards to play he loose the game.
 '''
 
+# This comment is just to check if everything is working and should be in Github
 
 
