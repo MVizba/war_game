@@ -20,17 +20,29 @@ import random
 
 
 class Game:
+    # Create a players and a deck as an empty lists.
     def __init__(self):
         self.deck = []
         self.player_A_hand = []
         self.player_B_hand = []
 
-# Define game cards four time each number. 
+    # Define game cards four time each number and shuffle a cards.
     def deck(self):
         cards = ["2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14"]
         deck = [card for card in cards for _ in range(4)]
         random.shuffle(deck)
         return deck
+
+    #Split deck in half ang move to player lists
+    def split_deck(self):
+        cards_to_player = len(self.deck) // 2
+        self.player_A_hand = self.deck[:cards_to_player]
+        self.player_B_hand = self.deck[cards_to_player:]
+
+    
+
+
+
 
 # 
 
